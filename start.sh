@@ -16,6 +16,11 @@ cat << EOF > "/config/btsync.conf"
     "listen" : "0.0.0.0:8888",
     "login" : "admin",
     "password" : "password"
+    ,"directory_root" : "/sync"
+    ,"directory_root_policy" : "belowroot"
+
+  ,"dir_whitelist" : [ "/sync", "/mnt" ]
+ 
   }
 }
 EOF
